@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Climate change</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="final.js"></script>
+
+    <!-- new paralax stuff 14-19 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- footer -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- our styling sheet -->
+    <link rel="stylesheet" type="text/css" href= "finalstyle.css">
+  </head>
+
+  <style>
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+  </style>
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <div class="navbar">
+      <a href=climateaction.html> Resources </a>
+      <a href=climatecontact.html> Contact</a>
+      <a href=climatebio.html>About</a>
+
+      <div class="dropdown">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+         	<div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropdown-content">
+          <a href=climatecrisis.html>Climate in Crisis</a>
+          <a href=climatepres.html>Climate and the 2020 Election</a>
+          <a href=climateracism.html>Environmental Racism and Third World Impact</a>
+          <a href=climateclothes.html>Climate and Clothing</a>
+          <a href=climatemars.html>Mission to Mars</a>
+          <a href=climateaction.html>How can you help?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Opening parallax -->
+    <div class="main"></div>
+    <div class="rellax text" data-rellax-speed="10"></div>
+    <div class="rellax clouds" data-rellax-speed="8"></div>
+    <div class="whitespace"></div>
+    <div class="content"></div>
+    <!--<script src="mp.js"></script>-->
+    <script type="text/javascript">
+       var rellax = new Rellax('.rellax');
+    </script>
+
+    <div class="parallax"></div>
+    <!-- <div style="height:1000px; background-color:gray; font-size:12px"> -->
+
+      <!-- Main page parallax -->
+      <div class = "im1" >
+        <h1>CLIMATE IN CRISIS</h1>
+        <h6><button onClick = climateCrisis()> Learn More </button></h6>
+      </div>
+      <div class="im2">
+        <h1> CLIMATE AND 2020 ELECTIONS </h1>
+        <h6> <button onClick = politics()>Learn More</button> </h6>
+      </div>
+      <div class="im3">
+        <h1>CLIMATE AND FAST FASHION</h1>
+        <h6> <button onClick = fashion()>Learn More</button> </h6>
+      </div>
+      <div class="im4">
+        <h1>ENVIRONMENTAL RACISM</h1>
+        <h6> <button onClick = racism()>Learn More</button> </h6>
+      </div>
+      <div class="im5">
+        <h1>MISSION TO MARS</h1>
+        <h6> <button onClick = mars()>Learn More</button> </h6>
+      </div>
+      <div class="im6">
+        <h1>ABOUT THE CREATORS</h1>
+        <h6> <button onClick = about()>Learn More</button> </h6>
+      </div>
+      <div class="im7">
+        <h1>WHAT CAN YOU DO?</h1>
+        <h6> <button onClick = action()>Learn More</button> </h6>
+      </div>
+
+      <!-- footer -->
+      <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="finalindex.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+          <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+          <i onClick = "window.location.href = 'https://www.instagram.com/earthmatters.gwc/';"class="fa fa-instagram w3-hover-opacity"></i>
+          <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+        </div>
+        <p> @ 2019 GWC F5 Networks <a href="https://girlswhocode.com/" title="Eath Matters" target="_blank" class="w3-hover-text-green">Girls Who Code</a></p>
+      </footer>
+
+      <!-- <h2><a href=climatecrisis.html>Climate Crisis</a></h2>
+  <h2><a href=climateclothes.html>Clothes and the Climate</a></h2>
+  <h2><a href=climatepres.html>Presidential Candidates and Climate Change</a></h2>
+  <h2><a href=climateracism.html>Environmental Racism</a></h2>
+  <h2><a href=climatemars.html>Mars=kinda cool</a></h2>
+  <h2><a href=climatebio.html>About</a></h2>
+  <h2><a href=climateaction.html>Being part of the solution</a></h2> -->
+
+    <!-- </div> -->
+</body>
+</html>
