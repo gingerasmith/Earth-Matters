@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #4b86b4;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #adcbe3;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #e7eff6;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #4b86b4;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>RESOURCES</h2>
+</header>
+
+<section>
+  <nav>
+    <h3>Resources</h3>
+    <p><strong> Links to HELP!</strong></p>
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://climate.nasa.gov/resources/education/">NASA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://act.nrdc.org/donate/donate-monthly?source=MRNRDCc3FR&gclid=CjwKCAjwqNnqBRATEiwAkHm2BMD6rybjJdzq6lJW6XGPoynJmlRYFa94FdDJxYMj6E3adtEtSGwy6hoCEvEQAvD_BwE">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.britannica.com/topic/United-States-Presidential-Election-Results-1788863">Politics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.iisd.org/faq/adapting-to-climate-change/">Third World Countries</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>THE TOOLS YOU NEED TO SAVE THE EARTH</h1>
+    <p>Welcome Earth Matters Resources section, a curated list of the tools and websites I strongly recommend for building and optimizing your knowledge on the world. I have tested every recommendation on this page. Many of the resources listed here are crucial to saving the earth...</p>
+    <p>Some of the links below are affiliate links, which means that if you choose to make a purchase, I will earn a commission. This commission comes at no additional cost to you. Please understand that I have experience with all of these companies, and I recommend them because they are helpful and useful, not because of the small commissions I make if you decide to buy something. Please do not spend any money on these products unless you feel you need them or that they will help you achieve your goals.
+      <img src="earth.png" width="200px">
+  </article>
+</section>
+
+<footer>
+  <p>GIRLS WHO CODE</p>
+</footer>
+
+</body>
+</html>
