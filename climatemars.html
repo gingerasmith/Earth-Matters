@@ -6,11 +6,17 @@
     </title>
     <link rel="stylesheet" href="finalstyle.css">
     <link rel="stylesheet" type="text/css" href= "navbar.css">
+    <script src="final.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 
   <style>
+  /* margin fix */
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
     @font-face{
       font-family: 'inhuman-bb';
       src: url(fonts/InhumanBB.ttf);
@@ -125,29 +131,29 @@ div.info{
   <body>
 
     <div class="navbar">
-    <a href="#resources"> Resources </a>
-    <a href="#contact"> Contact</a>
-    <a href=climatebio.html>About</a>
-    <a href=finalindex.html>Home</a>
+      <a href="climateaction.html"> Resources </a>
+      <a href="climatecontact.html"> Contact</a>
+      <a href=climatebio.html>About</a>
+      <a href=finalindex.html>Home</a>
 
 
-    <div class="dropdown">
-      <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div class="dropdown">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropdown-content">
+          <a href=climatecrisis.html>Climate in Crisis</a>
+          <a href=climatepres.html>Climate and the 2020 Election</a>
+          <a href=climateracism.html>Environmental Racism and Third World Impact</a>
+          <a href=climateclothes.html>Climate and Clothing</a>
+          <a href=climatemars.html>Mission to Mars</a>
+          <a href="climateaction.html">How can you help?</a>
+        </div>
       </div>
-    <div id="dropdown-content">
-      <a href=climatecrisis.html>Climate in Crisis</a>
-      <a href=climatepres.html>Climate and the 2020 Election</a>
-      <a href=climateracism.html>Environmental Racism and Third World Impact</a>
-      <a href=climateclothes.html>Climate and Clothing</a>
-      <a href=climatemars.html>Mission to Mars</a>
-      <a href=climatebio.html>About the Creators</a>
-      <a href="#">How can you help?</a>
     </div>
-    </div>
-    </div>
+
 
 <!-- below code is the slideshow, including java and css -->
 <div class="slideshow-container">
