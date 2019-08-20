@@ -9,14 +9,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-
+<script src="final.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
 
+/* margin fix */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 /* Create 3 equal columns that float next to each other */
+
+.solutions{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.columnsolutionpic{
+  width:10%;
+  height:152px;
+  float: left;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.columnsolutiontext{
+  padding: 10px;
+  font-size: 15px;
+  width: 23%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* opacity: .3; */
+  height: 152px;
+}
+
 .column1text {
   font-size: 10px;
   float: left;
@@ -78,51 +107,58 @@
   <body>
 
     <div class="navbar">
-    <a href="#resources"> Resources </a>
-    <a href="#contact"> Contact</a>
-    <a href=climatebio.html>About</a>
-    <a href=finalindex.html>Home</a>
+      <a href="climateaction.html"> Resources </a>
+      <a href="climatecontact.html"> Contact</a>
+      <a href=climatebio.html>About</a>
+      <a href=finalindex.html>Home</a>
 
 
-    <div class="dropdown">
-      <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div class="dropdown">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropdown-content">
+          <a href=climatecrisis.html>Climate in Crisis</a>
+          <a href=climatepres.html>Climate and the 2020 Election</a>
+          <a href=climateracism.html>Environmental Racism and Third World Impact</a>
+          <a href=climateclothes.html>Climate and Clothing</a>
+          <a href=climatemars.html>Mission to Mars</a>
+          <a href="climateaction.html">How can you help?</a>
+        </div>
       </div>
-    <div id="dropdown-content">
-      <a href=climatecrisis.html>Climate in Crisis</a>
-      <a href=climatepres.html>Climate and the 2020 Election</a>
-      <a href=climateracism.html>Environmental Racism and Third World Impact</a>
-      <a href=climateclothes.html>Climate and Clothing</a>
-      <a href=climatemars.html>Mission to Mars</a>
-      <a href=climatebio.html>About the Creators</a>
-      <a href="#">How can you help?</a>
     </div>
-    </div>
-    </div>
+
     <div class = "fashionWaste" >
-      <h2>What is it?
-      Fast fashion describes cheaply produced and priced garments produced rapidly by mass-market retailers in response to the latest trends.
-
-      The Impact
-      Fast fashion has caused the fashion industry to become the second largest polluter in the world.
-
-      <h2>Big solutions</h2>
+      <h2>What is it?</h2>
+        <h3>Fast fashion describes cheaply produced and priced garments produced rapidly by mass-market retailers in response to the latest trends.</h3>
+      <br>
+      <h2>The Impact</h2>
+      <h3>Fast fashion has caused the fashion industry to become the second largest polluter in the world.</h3>
+      <br>
+      <h2 style="margin: 0"><div class=solutions>Big solutions</h2>
       <div class="row">
-        <div class="column1text" style="background-color:#aaa;">
-          <h2>Column 1</h2>
-          <p>Donate clothes when you’re done with them rather than throwing them away</p>
+        <div class="columnsolutionpic">
+          <img src=fashion.check.png style="width:100%;height:100%;">
         </div>
-        <div class="column2pic">
-          <h2>Column 2</h2>
-          <p>Buy clothes used</p>
+        <div class="columnsolutiontext">
+          <p><strong>Donate clothes when you’re done with them rather than throwing them away</strong></p>
         </div>
-        <div class="column3text" style="background-color:#ccc;">
-          <h2>Column 2</h2>
-          <p>Avoid synthetic fabrics such as</p>
+        <div class="columnsolutionpic">
+          <img src=fashion.check.png style="width:100%;height:100%;">
+        </div>
+        <div class="columnsolutiontext">
+          <p><strong>Buy clothes used, there are many thrift stores and second hand stores!</strong></p>
+        </div>
+        <div class="columnsolutionpic">
+          <img src=fashion.check.png style="width:100%;height:100%;">
+        </div>
+        <div class="columnsolutiontext">
+          <p><strong>Avoid synthetic fabrics such as nylon, polyester, and rayon</strong></p>
         </div>
       </div>
+
 
       <center><h2>Water Pollution</h2></center>
       <div class="row">
@@ -140,7 +176,8 @@
           <img src=newfashion.chemical.jpg style="width:100%;height:100%;">
         </div>
       </div>
-</div>
+    </div>
+
 
 
       <center><h2>Water Consumption</h2></center>
