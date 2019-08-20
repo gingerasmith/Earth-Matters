@@ -1,9 +1,36 @@
 <!DOCTYPE html>
+
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="final.js"></script>
+
+  <!-- new paralax stuff 14-19 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- footer -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- our styling sheet -->
+  <link rel="stylesheet" type="text/css" href= "finalstyle.css">
+
+  <!-- navbar styling sheet -->
+  <link rel="stylesheet" type="text/css" href= "navbar.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href= "navbar.css">
 <style>
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
 body, html {
   height: 100%;
   margin: 0;
@@ -26,12 +53,44 @@ body, html {
 </style>
 </head>
 <body>
+  <div class="navbar">
+<a href="#resources"> Resources </a>
+<a href="#contact"> Contact</a>
+<a href=climatebio.html>About</a>
+<a href=finalindex.html>Home</a>
+
+
+<div class="dropdown">
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div id="dropdown-content">
+    <a href=climatecrisis.html>Climate in Crisis</a>
+    <a href=climatepres.html>Climate and the 2020 Election</a>
+    <a href=climateracism.html>Environmental Racism and Third World Impact</a>
+    <a href=climateclothes.html>Climate and Clothing</a>
+    <a href=climatemars.html>Mission to Mars</a>
+    <a href=climatebio.html>About the Creators</a>
+    <a href="#">How can you help?</a>
+  </div>
+</div>
+</div>
   <div>
     <img src="1.png" alt="Flowers in Chania" class="bg">
     <img src="2.png" alt="Flowers in Chania" class="bg">
     <img src="3.png" alt="Flowers in Chania" class="bg">
     <img src="4.png" alt="Flowers in Chania" class="bg">
 </div>
-
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="climatepres.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+    <i onClick = "window.location.href = 'https://www.instagram.com/earthmatters.gwc/';"class="fa fa-instagram w3-hover-opacity"></i>
+    <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+  </div>
+  <p> @ 2019 GWC F5 Networks <a href="https://girlswhocode.com/" title="Eath Matters" target="_blank" class="w3-hover-text-green">Girls Who Code</a></p>
+</footer>
 </body>
 </html>
