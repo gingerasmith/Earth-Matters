@@ -1,90 +1,58 @@
 <?php
-if(isset($_POST['email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "11gingersmith@gmail.com";
-    $email_subject = "PHP";
+if($_POST) {
+    $visitor_name = "PHP";
+    $visitor_email = "aalmarie15@gmail.com";
+    $email_title = "sksks and i oop";
+    $concerned_department = "uh ha ha";
+    $visitor_message = "no";
 
-    function died($error) {
-        // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
+    if(isset($_POST['visitor_name'])) {
+        $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
     }
 
-
-    // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');
+    if(isset($_POST['visitor_email'])) {
+        $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
+        $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
     }
 
-
-
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
-
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-  }
-
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
-
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
-
-  if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  }
-
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
-
-    $email_message = "Form details below.\n\n";
-
-
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
+    if(isset($_POST['email_title'])) {
+        $email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
     }
 
+    if(isset($_POST['concerned_department'])) {
+        $concerned_department = filter_var($_POST['concerned_department'], FILTER_SANITIZE_STRING);
+    }
 
+    if(isset($_POST['visitor_message'])) {
+        $visitor_message = htmlspecialchars($_POST['visitor_message']);
+    }
 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
-    $email_message .= "Comments: ".clean_string($comments)."\n";
+    if($concerned_department == "billing") {
+        $recipient = "billing@domain.com";
+    }
+    else if($concerned_department == "marketing") {
+        $recipient = "marketing@domain.com";
+    }
+    else if($concerned_department == "technical support") {
+        $recipient = "tech.support@domain.com";
+    }
+    else {
+        $recipient = "contact@domain.com";
+    }
 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-?>
+    $headers  = 'MIME-Version: 1.0' . "\r\n"
+    .'Content-type: text/html; charset=utf-8' . "\r\n"
+    .'From: ' . $visitor_email . "\r\n";
 
-<!-- include your own success html here -->
+    if(mail($recipient, $email_title, $visitor_message, $headers)) {
+        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+    } else {
+        echo '<p>We are sorry but the email did not go through.</p>';
+    }
 
-Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
-
+} else {
+    echo '<p>Something went wrong</p>';
 }
+
 ?>
