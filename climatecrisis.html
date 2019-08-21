@@ -2,10 +2,10 @@
 <html>
   <head>
     <title>
-      Cccccclimate crisis
+      Climate Crisis
     </title>
     <link rel="stylesheet" href="finalstyle.css">
-    <link rel="stylesheet" type="text/css" href= "navbar.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -13,65 +13,344 @@
     <script src="final.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
 
-    <div class="navbar">
-      <a href="#resources"> Resources </a>
-      <a href="#contact"> Contact</a>
-      <a href=climatebio.html>About</a>
-      <a href=finalindex.html>Home</a>
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        }
 
+        .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,10,0,0.2);
+    }
 
-      <div class="dropdown">
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: ;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+      @font-face {
+        font-family: 'hansville';
+        src:url(fonts/Hansville.ttf);
+      }
+      @font-face {
+        font-family: 'raphtalia';
+        src:url(fonts/Raphtalia_DEMO.ttf);
+      }
+
+      .content {
+        margin-left: 150px;
+      }
+
+    .container {
+      position: auto;
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 200px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 20;
+      bottom: 0;
+      left: 200;
+      right: 0;
+      height: 300px;
+      width: 300px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #5B9371   ;
+    }
+
+    .back {
+      background-color: #5B9371;
+      color: white;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .textfacts {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: Hansville;
+      width: 300px;
+
+    }
+
+    .column1 {
+      float: left;
+      margin-left: 170px;
+      width: 26%;
+      margin-bottom: 25px;
+    }
+
+    .column2and3 {
+      float: left;
+      width: 26%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .image {
+      width: 300px;
+      height: 300px;
+      padding: 0px;
+    }
+
+    .title {
+      font-family: raphtalia;
+      font-size:60px;
+      color: black;
+    }
+    .subtitlefacts {
+      font-size: 25px;
+      color: #000000;
+        }
+    /* body {
+      background-color: rgb(255,255,255,1);
+      background-image: url("crisis.background.jpg");
+    } */
+    </style>
+    </head>
+
+    <body>
+
+      <div class="navbar">
+        <a href="climateaction.html"> Resources </a>
+        <a href="climatecontact.html"> Contact</a>
+        <a href=climatebio.html>About</a>
+        <a href=finalindex.html>Home</a>
+        <div class="dropdown">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="dropdown-content">
+            <a href=climatecrisis.html>Climate in Crisis</a>
+            <a href=climatepres.html>Climate and the 2020 Election</a>
+            <a href=climateracism.html>Environmental Racism and Third World Impact</a>
+            <a href=climateclothes.html>Climate and Clothing</a>
+            <a href=climatemars.html>Mission to Mars</a>
+            <a href="climateaction.html">How can you help?</a>
+          </div>
         </div>
-        <div id="dropdown-content">
-          <a href=climatecrisis.html>Climate in Crisis</a>
-          <a href=climatepres.html>Climate and the 2020 Election</a>
-          <a href=climateracism.html>Environmental Racism and Third World Impact</a>
-          <a href=climateclothes.html>Climate and Clothing</a>
-          <a href=climatemars.html>Mission to Mars</a>
-          <a href=climatebio.html>About the Creators</a>
-          <a href="#">How can you help?</a>
+      </div>
+
+<div class="factsBackground">
+
+    <div class="content">
+    <div class= "title">
+    <center><h2>Climate Crisis</h2>
+    <div class= "subtitlefacts">
+      <center><h1>Here are the facts you <em>need</em> to know</h1></center>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="column1">
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="crisis.ice.jpg" alt="Ice melting" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <div class="textfacts"><strong>ICE</strong>
+                <br>
+                <h3> The earth's average temperature has risen 1.9 degrees since the late 19th century Our oceans have absorbed .4 degrees fahrenheit since 1969 *Antartica has lost 127 billion tons of ice per year since 1993-2016 and that number has tripled since then and Greenland has lost 286 billion tons of ice between the years 1993-2016. </h3>
+                </div>
+              </div>
+          </div>
+          <br>
         </div>
       </div>
     </div>
 
+      <div class="column2and3">
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+              <img src="crisis.deforestation.jpg"alt="Aerial view of forest with half of the trees cut down" class="image"style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+          <!-- <div class="overlay"> -->
+            <div class="textfacts"><strong>DEFORESTATION<br></strong>
+              11% of emissions are due to deforestation, an average of 3.5-7 billions trees per year, that's the same as the population of the entire earth.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h1>Here are the facts you <em>need</em> to know</h1>
+      <div class="column2and3">
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+          <img src="crisis.humans.jpg" alt="Woman covering mouth with fabric and fire burning behind her" class="image">
+        </div>
+            <div class="flip-card-back">
+            <div class="textfacts"><p><center><strong>HUMAN EFFECTS</p>The ocean acidity has decreased in .1 pH since the industrial revolution, making it more acidic. In humans, a decrease in pH of .2-.3 could cause seizures, comas and even death. Imagine the effects that could do to the entire ocean.</strong></center></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    Climate Crisis: Statistics:
+    <div class="row">
+      <div class="column1">
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+          <img src="crisis.natural.jpg" alt="Crumbling buildings" class="image">
+        </div>
+        <div class="flip-card-back">
+                  <div class="textfacts"><strong>NATURAL DISASTERS</strong><br><h3>*800 million people are affected by climate change effects such as flooding, heat waves, droughts and much more, that is more than the entire population of europe.
+                </h3></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-The earth's average temperature has risen 1.9 degrees since the late 19th century
-Our oceans have absorbed .4 degrees fahrenheit since 1969
-*Antartica has lost 127 billion tons of ice per year since 1993-2016 and that number has tripled since then and Greenland has lost 286 billion tons of ice between the years 1993-2016.
-<img src=crisis.ice.png>
+      <div class="column2and3">
+        <div class="container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+          <img src="crisis.coral.jpg"alt="Fish swimming through coral" class="image">
+        </div>
+            <div class="flip-card-back">
+            <div class="textfacts"><strong>OUR OCEANS<br></strong>
+              <h3>Since the beginning of the industrial revolution, the acidity of the ocean water has increased by 30%. The sea level is rising 3.3 millimeters per year, that is 1.3 inches every decade. The global sea level has risen 8 inches in the last century.
+              <h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-Since the beginning of the industrial revolution, the acidity of the ocean water has increased by 30%.
-The sea level is rising 3.3 millimeters per year, that is 1.3 inches every decade.
-The global sea level has risen 8 inches in the last century.
-The levels of carbon dioxide are currently 408 parts per million which haven't been so high in 3 million years
-*11% of emissions are due to deforestation, an average of 3.5-7 billions trees per year, that's the same as the population of the entire earth.
-<img src=crisis.tree.png>
-
-*The ocean acidity has decreased in .1 pH since the industrial revolution, making it more acidic. In humans, a decrease in pH of .2-.3 could cause seizures, comas and even death. Imagine the effects that could do to the entire ocean…
-<img src=crisis.coral.png>
-
-*800 million people are affected by climate change effects such as flooding, heat waves, droughts and much more, that is more than the entire population of europe.
-
-
-*There are approximately 46 trillion pounds of fossil fuels produced per year.
-<img src=crisis.powerplant.png>
-
-
-With the horrendous effects of climate change creeping up on us, we are realizing the limited time we have to take action and preserve our precious earth. If we all work together on this earth, we can make a change which will keep generations thriving on this luscious planet for years to come.
+      <div class="column2and3">
+          <div class="container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+            <img src="crisis.oil.jpg"alt="Oil rigs" class="image">
+          </div>
+              <div class="flip-card-back">
+              <div class="textfacts"><strong>HOW WE USE OUR ENERGY<br></strong>
+                <h3>85.2% of our energy is produced from oil, natural gas and coal.<h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+    <div class="row">
+      <div class="column1">
+      <div class="container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="crisis.earth.jpg"alt="Satellite view of earth" class="image">
+      </div>
+        <div class="flip-card-back">
+              <div class="textfacts"><strong>EARTHS RESOURCES<br></strong>
+                <h3>Every year we blow this ecological budget earlier and earlier and at our current rate of resource use we'd need 1.75 planets to support our demand on Earth's ecosystem.Before the 1970s, our resource use remained within the boundaries of what our planet could produce - in 1961, we only used three-quarters of our annual resources. <h3></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      <div class="column2and3">
+          <div class="container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+            <img src="crisis.warm.jpg"alt="Thermal map of Earth's oceans" class="image">
+        </div>
+        <div class="flip-card-back">
+              <div class="textfacts"><strong>INCREASING WARMTH <br></strong>
+                <h3>The past five years have been the five warmest since record-keeping began in the late 1800s. The Earth has experienced 42 straight years (since 1977) with an above-average global temperature<h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </body>
+      <div class="column2and3">
+      <div class="container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+          <img src="crisis.coal.jpg" alt="Power plants" class="image">
+      </div>
+      <div class="flip-card-back">
+            <div class="textfacts"><strong>CARBON EMISSIONS <br></strong>
+              <h3>There is more carbon dioxide in the atmosphere today than at any point in the last 800,000 years.Though Americans make up just 4 percent of the world's population, we produce 25 percent of the carbon dioxide pollution from fossil-fuel burning -- by far the largest share of any country.*There are approximately 46 trillion pounds of fossil fuels produced per year.<h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</html>
+    </body>
+    </html>
