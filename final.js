@@ -46,4 +46,10 @@ function action () {
   window.location = 'climateaction.html'
 }
 
+// function contact(){
+//   $.ajax({
+//     type: "POST"
+//     url: ''
+//   })
+// }
 //contact page
