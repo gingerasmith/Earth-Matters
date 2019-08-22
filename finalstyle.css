@@ -224,7 +224,7 @@ h6 {
 .im4{
   height: 100vh;
   width: 100%;
-  background-image: url(pollute.jpg);
+  background-image: url(pollute.JPG);
   background-size: cover;
   background-position: center;
   display: table;
@@ -246,7 +246,7 @@ h6 {
 .im6{
   height: 100vh;
   width: 100%;
-  background-image: url(me.jpg);
+  background-image: url(me.JPG);
   background-size: cover;
   background-position: center;
   display: table;
@@ -257,7 +257,7 @@ h6 {
 .im7{
   height: 100vh;
   width: 100%;
-  background-image: url(protest.jpg);
+  background-image: url(protest.JPG);
   background-size: cover;
   background-position: center;
   display: table;
