@@ -110,7 +110,7 @@ html, body {
       width: 100%;
       height: 100vh;
       position: absolute;
-      background: url(home.fire.PNG) no-repeat 50% 50%;
+      background: url(home.fire.png) no-repeat 50% 50%;
       background-size: cover;
 }
 
@@ -258,7 +258,7 @@ h6 {
 .im7{
   height: 100vh;
   width: 100%;
-  background-image: url(protest.JPG);
+  background-image: url(protest.jpg);
   background-size: cover;
   background-position: center;
   display: table;
